@@ -4,16 +4,30 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
+
+# class Solution(object):
+#     def maxDepth(self, root):
+#         """
+#         :type root: TreeNode
+#         :rtype: int
+#         """
+#         return self.get_length(root)
+        
+#     def get_length(self, root, depth=0):
+#         if not root:
+#             return depth
+#         return max(self.get_length(root.left, depth + 1), self.get_length(root.right, depth + 1))
+
+
+# another solutin
+
 class Solution(object):
     def maxDepth(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        return self.get_length(root)
-        
-    def get_length(self, root, depth=0):
         if not root:
-            return depth
-        return max(self.get_length(root.left, depth + 1), self.get_length(root.right, depth + 1))
+            return 0
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
         
