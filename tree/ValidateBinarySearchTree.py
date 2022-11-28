@@ -17,3 +17,4 @@ class Solution:
                     valid(node.right, node.val, right))
         
         return valid(root, float("-inf"), float("inf"))
+        

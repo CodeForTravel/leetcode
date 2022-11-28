@@ -18,4 +18,3 @@ class Solution(object):
             current = temp
 
         return prev
-

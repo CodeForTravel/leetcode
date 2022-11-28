@@ -5,25 +5,6 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-
-        # found_values = set()
-        # last_num_index = -1
-        # first_number = -1
-        # first_num_index = -1
-        # is_number_found = False
-        # for i, a in enumerate(nums):
-        #     diff = target - a
-        #     if diff in found_values:
-        #         is_number_found = True
-        #         last_num_index = i
-        #         first_number = diff
-        #         break
-        #     found_values.add(a)
-
-        # first_num_index = nums.index(first_number)
-        # if is_number_found:
-        #     return [first_num_index, last_num_index]
-
         # better soution
         prevMap = {}
         for i, n in enumerate(nums):
