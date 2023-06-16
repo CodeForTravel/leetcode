@@ -16,7 +16,6 @@ class Solution(object):
         result_list = []
         for value in hashDict.values():
             result_list.append(value)
-
         return result_list
 
         # another solution by NeetCode
@@ -32,7 +31,7 @@ class Solution(object):
 
 
 strs = ["eat", "tea", "tan", "ate", "nat", "bat"]
-strs = ["a"]
-strs = [""]
+# strs = ["a"]
+# strs = [""]
 obj = Solution()
 print(obj.groupAnagrams(strs))

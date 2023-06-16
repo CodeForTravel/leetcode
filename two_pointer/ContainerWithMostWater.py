@@ -8,7 +8,6 @@ class Solution(object):
         l = 0
         r = len(height) - 1
         while l < r:
-            pass
             width = r - l
             _height = min(height[r], height[l])
             area = width * _height

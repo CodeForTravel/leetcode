@@ -1,4 +1,3 @@
-
 class Solution(object):
     def threeSum(self, nums):
         result_list = []
