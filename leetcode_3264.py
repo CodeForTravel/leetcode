@@ -20,7 +20,7 @@ class Solution(object):
         return nums
 
 
-nums = [2, 1, 3, 5, 6]
+nums = [2, 10, 3, 5, 6]
 k = 5
 multiplier = 2
 sol = Solution()
