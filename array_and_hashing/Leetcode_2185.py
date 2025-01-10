@@ -7,8 +7,8 @@ class Solution(object):
         :rtype: int
         """
         res = 0
+        prefix_len = len(pref)
         for word in words:
-            prefix_len = len(pref)
             if len(word) >= prefix_len and word[:prefix_len] == pref:
                 res += 1
         return res
