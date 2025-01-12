@@ -1,19 +1,21 @@
 class Solution(object):
     def isValid(self, s):
         stack = []
-        closeToOpen = {")":"(", "}":"{", "]":"["}
+        closeToOpen = {")": "(", "}": "{", "]": "["}
 
-        for c in s:
-            if c in closeToOpen:
-                if stack and stack[-1] == closeToOpen[c]:
+        for ch in s:
+            print(ch)
+            if ch in closeToOpen:
+                import pdb
+
+                pdb.set_trace()
+                if stack and stack[-1] == closeToOpen[ch]:
                     stack.pop()
                 else:
                     return False
             else:
-                stack.append(c)
+                stack.append(ch)
         return True if not stack else False
-                
-        
 
 
 s = "((){]})[]{}"
