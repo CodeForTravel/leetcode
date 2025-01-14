@@ -4,11 +4,7 @@ class Solution(object):
         closeToOpen = {")": "(", "}": "{", "]": "["}
 
         for ch in s:
-            print(ch)
             if ch in closeToOpen:
-                import pdb
-
-                pdb.set_trace()
                 if stack and stack[-1] == closeToOpen[ch]:
                     stack.pop()
                 else:
